@@ -188,10 +188,10 @@ function mostrarHotelPuntaCana() {
     <button id='btnSelection1'>seleccionar</button>`
 
 
+    hoteles.appendChild(tarjetas)
     let botonSeleccion1 = document.getElementById('btnSelection1');
     botonSeleccion1.className = 'tarjetaBtn';
     botonSeleccion1.onclick = () => alert('Elegiste Hotel Punta Cana! La mejor opcion!');
-    hoteles.appendChild(tarjetas)
 }
 
 function mostrarHotelDominica() {
@@ -219,10 +219,10 @@ function mostrarHotelDominica() {
                     <button id='btnSelection2'>seleccionar</button>`
 
 
+    hoteles.appendChild(tarjetas)
     let botonSeleccion2 = document.getElementById('btnSelection2');
     botonSeleccion2.className = 'tarjetaBtn';
     botonSeleccion2.onclick = () => alert('Elegiste Hotel Dominica! La mejor opcion!');
-    hoteles.appendChild(tarjetas)
 }
 
 function mostrarHotelGrandBavaro() {
@@ -259,4 +259,4 @@ function mostrarHotelGrandBavaro() {
 // mostrarHotelPuntaCana();
 // mostrarHotelDominica();
 // mostrarHotelGrandBavaro()
-submit.onclick = () => (mostrarHotelPuntaCana(), mostrarHotelDominica(), mostrarHotelGrandBavaro());
+submit.onclick = () => (mostrarHotelPuntaCana(), mostrarHotelDominica(), mostrarHotelGrandBavaro(), submit.onclick = null); //El evento solo puede ser clickeado 1 SOLA VEZ
